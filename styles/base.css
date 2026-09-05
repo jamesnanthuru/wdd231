@@ -168,7 +168,7 @@ header {
 
 #primaryNav ul li a.active {
     background-color: var(--turquoise);
-    color: var(--white);
+    color: var(--dark-grey);  /* Changed from white to dark grey for contrast */
 }
 
 #primaryNav ul li a.active:hover {
@@ -284,7 +284,7 @@ main {
 
 .filter-btn.active {
     background-color: var(--turquoise);
-    color: var(--white);
+    color: var(--dark-grey);  /* Improved contrast */
     border-color: var(--turquoise-dark);
 }
 
