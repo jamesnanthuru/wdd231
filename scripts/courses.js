@@ -33,16 +33,6 @@ const courses = [
         completed: true
     },
     {
-        subject: 'CSE',
-        number: 210,
-        title: 'Programming with Classes',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course will introduce the notion of classes...',
-        technology: ['C#'],
-        completed: false
-    },
-    {
         subject: 'WDD',
         number: 131,
         title: 'Dynamic Web Fundamentals',
@@ -51,6 +41,16 @@ const courses = [
         description: 'This course builds on prior experience...',
         technology: ['HTML', 'CSS', 'JavaScript'],
         completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 210,
+        title: 'Programming with Classes',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course will introduce the notion of classes...',
+        technology: ['C#'],
+        completed: false
     },
     {
         subject: 'WDD',
@@ -89,10 +89,12 @@ function renderCourses(filter = 'all') {
     filtered.forEach(course => {
         const statusClass = course.completed ? 'completed' : 'in-progress';
         const label = `${course.subject} ${course.number}`;
+        const statusText = course.completed ? 'Completed' : 'In Progress';
         html += `
             <div class="course-circle ${statusClass}">
                 <span class="course-code">${label}</span>
                 <span class="course-title">${course.title}</span>
+                <span class="course-status-label">${statusText}</span>
             </div>
         `;
     });
