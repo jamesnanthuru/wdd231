@@ -66,19 +66,8 @@ const courses = [
 
 const courseGrid = document.getElementById('courseGrid');
 const totalCreditsSpan = document.getElementById('totalCredits');
+const progressPercentageText = document.getElementById('progressPercentageText');
 const filterBtns = document.querySelectorAll('.filter-btn');
-const progressFill = document.getElementById('progressFill');
-const progressText = document.getElementById('progressText');
-
-function updateProgress() {
-    const totalCredits = courses.reduce((sum, c) => sum + c.credits, 0);
-    const completedCredits = courses
-        .filter(c => c.completed)
-        .reduce((sum, c) => sum + c.credits, 0);
-    const percentage = totalCredits ? (completedCredits / totalCredits) * 100 : 0;
-    progressFill.style.width = `${percentage}%`;
-    progressText.textContent = `${Math.round(percentage)}%`;
-}
 
 function renderCourses(filter = 'all') {
     let filtered = courses;
@@ -87,21 +76,26 @@ function renderCourses(filter = 'all') {
 
     let html = '';
     filtered.forEach(course => {
-        const statusClass = course.completed ? 'completed' : 'in-progress';
         const label = `${course.subject} ${course.number}`;
-        const statusText = course.completed ? 'Completed' : 'In Progress';
+        const statusClass = course.completed ? 'completed' : 'in-progress';
         html += `
             <div class="course-circle ${statusClass}">
                 <span class="course-code">${label}</span>
-                <span class="course-title">${course.title}</span>
-                <span class="course-status-label">${statusText}</span>
             </div>
         `;
     });
     courseGrid.innerHTML = html;
 
-    const total = filtered.reduce((sum, c) => sum + c.credits, 0);
-    totalCreditsSpan.textContent = total;
+    const totalFilteredCredits = filtered.reduce((sum, c) => sum + c.credits, 0);
+    totalCreditsSpan.textContent = totalFilteredCredits;
+
+    const totalOverallCredits = courses.reduce((sum, c) => sum + c.credits, 0);
+    const completedOverallCredits = courses
+        .filter(c => c.completed)
+        .reduce((sum, c) => sum + c.credits, 0);
+    const progressPercentage = totalOverallCredits ? Math.round((completedOverallCredits / totalOverallCredits) * 100) : 0;
+
+    progressPercentageText.textContent = `${progressPercentage}% Completed`;
 }
 
 filterBtns.forEach(btn => {
@@ -113,4 +107,3 @@ filterBtns.forEach(btn => {
 });
 
 renderCourses('all');
-updateProgress();
