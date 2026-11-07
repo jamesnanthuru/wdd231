@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Fresh Harvest Malawi",
+    "address": "P.O. Box 001, Blantyre",
+    "phone": "0888000111",
+    "url": "https://freshharvest.mw",
+    "image": "fresh_harvest.webp",
+    "membership": 3,
+    "tagline": "Farm-fresh agricultural products",
+    "description": "Providing the freshest locally sourced vegetables and fruits directly to your table."
+  },
+  {
+    "name": "Blantyre Threads",
+    "address": "P.O. Box 002, Blantyre",
+    "phone": "0888000112",
+    "url": "https://blantyrethreads.mw",
+    "image": "clothes.webp",
+    "membership": 1,
+    "tagline": "Quality second-hand clothes & shoes",
+    "description": "Your premier destination for affordable, high-quality pre-loved fashion and footwear."
+  },
+  {
+    "name": "Malawian Coffee Corner",
+    "address": "P.O. Box 003, Blantyre",
+    "phone": "0888000113",
+    "url": "https://malawicoffee.mw",
+    "image": "coffee.webp",
+    "membership": 2,
+    "tagline": "Tasty local Malawian coffee",
+    "description": "Experience the rich flavors of locally grown Mzuzu coffee in a cozy, welcoming atmosphere."
+  },
+  {
+    "name": "Intercity Logistics",
+    "address": "P.O. Box 004, Blantyre",
+    "phone": "0888000114",
+    "url": "https://intercitylogistics.mw",
+    "image": "logistics.webp",
+    "membership": 3,
+    "tagline": "Reliable intercity goods movement",
+    "description": "Fast, secure, and reliable transportation of goods between Blantyre and major cities."
+  },
+  {
+    "name": "Organic Meats MW",
+    "address": "P.O. Box 005, Blantyre",
+    "phone": "0888000115",
+    "url": "https://organicmeats.mw",
+    "image": "meat.webp",
+    "membership": 2,
+    "tagline": "Organically raised Meats!",
+    "description": "Premium cuts of meat sourced exclusively from ethically and organically raised livestock."
+  },
+  {
+    "name": "GreenGrow Agri-Inputs",
+    "address": "P.O. Box 006, Blantyre",
+    "phone": "0888000116",
+    "url": "https://greengrow.mw",
+    "image": "agri_inputs.webp",
+    "membership": 1,
+    "tagline": "Quality agricultural inputs",
+    "description": "Supplying local farmers with top-tier seeds, fertilizers, and modern farming equipment."
+  },
+  {
+    "name": "Daily Needs Groceries",
+    "address": "P.O. Box 007, Blantyre",
+    "phone": "0888000117",
+    "url": "https://dailygroceries.mw",
+    "image": "groceries.webp",
+    "membership": 3,
+    "tagline": "Your local grocery store",
+    "description": "A one-stop shop for all your household essentials, pantry staples, and daily needs."
+  },
+  {
+    "name": "Blantyre Heritage Tours",
+    "address": "P.O. Box 008, Blantyre",
+    "phone": "0888000118",
+    "url": "https://blantyreheritage.mw",
+    "image": "tours.webp",
+    "membership": 2,
+    "tagline": "Discover the history of Blantyre",
+    "description": "Guided tours exploring the rich cultural history, architecture, and landmarks of Malawi's commercial capital."
+  }
+]
