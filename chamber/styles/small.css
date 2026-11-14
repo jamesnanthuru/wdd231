@@ -152,7 +152,6 @@ header {
 .filter-btn.active {
     background-color: var(--dark-grey);
     color: var(--white);
-    border-color: var(--dark-grey);
 }
 
 #directoryContainer {
