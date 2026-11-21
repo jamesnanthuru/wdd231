@@ -127,3 +127,13 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media (min-width: 768px) {
+    /* Join Page Desktop Layout */
+    .join-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* Form takes 2/3, Cards take 1/3 */
+        align-items: start;
+        gap: 2rem;
+    }
+}
