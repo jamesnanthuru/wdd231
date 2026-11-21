@@ -97,3 +97,33 @@
         text-align: right; 
     }
 }
+
+@media (min-width: 768px) {
+    /* Home Page Desktop Layout */
+    
+    .hero {
+        max-height: 500px;
+    }
+
+    .hero-img {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
